@@ -1,8 +1,6 @@
 # Section guide
-### - Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity (ROOT REQUIRED) 
 ### - [Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity (ROOT REQUIRED)](#Tasker2G)
-### - Kernel - Various tweaks 
-[](#Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED])
+### - [Kernel - Various tweaks](#kernelmisc)
 
 
 ## <a name="Tasker2G"></a> Tasker - Auto 2G/4G 
@@ -50,14 +48,51 @@ Tasker Exit-task (press and hold the task on the Profile screen -> add exit task
 
 
 
+## <a name="KernelMisc"></a> Kernel tweaks 
+
+I'm using stock kernel (no custom kernels released yet)
+
+I'm using ElementalX Kernel Manager (EX Kernel Manager)
+Note: Make sure for the following settings the power symbol on the right is blue (apply on boot)
+CPU interactive govenor, BUT with 
+Glassfish 1.2 interactive governor profile (link) - there's a guide on the linked post.
+Note: without a custom kernel, TouchBoost cannot be disabled - won't get full energy savings
+
+Max CPU frequency 1689MHz
+Min CPU frequency 652 MHz (can custom kernels make this even lower? [Bacon's Lighting Kernel](https://forum.xda-developers.com/oneplus-one/development/lightning-kernel-omni-rom-v01-t3245895) went down to 268MHz
+- Don't notice a slowdown compared to 2016 MHz
+
+
+
+CPUs 4 & 5 disabled
+background: SD625 has 8x A53 cores on 14nm fabrication process
+                      cores 0-3 are "small" 
+                      cores 4-7 are "big" (they're just differnet labels for the same thing)
+
+- I'm a light user (few games, not graphically/computationally demanding)
+- Don't notice a slowdown compared to all 8 cores being enabled 
+- Disabling all 4 "big cores" gave lags when extra power was needed
+- Will try disabling cores 4, 5, & 6
+- Keeping cores 0-3 active seems important, might try disabling 1 (they seem to be "always active", whilst cores 4-7 become active under heavy loads)
+- Governor seems to be giving too much of a boost to the "big" cores, hence disabling some "big cores"
+
+
+wq_power_saving enabled (no idea what it is, couldn't find info about it.... sounds good though)
+
+
+GPU
+Max GPU frequency 320MHz 
+Min GPU frequency 133MHz 
+GPU initial frequency 133MHz 
 
 
 
 
+Note: 
+27 hours standby, 3h15m SoT, 73% battery (95% of the time signal is dark green, very strong). Very little wakelock bars shown when screen is not on
 
-
-
-
+Wakelocks
+1h from WeChat (462 counts) and Messenger (227 counts) EACH!
 
 
 
