@@ -110,7 +110,7 @@ Wakelocks
 ## <a name="microg"></a> Google Play Services open-source replacement, MicroG
 
 
-I tried both MIUI and AEX
+I tried both [xiaomi.eu's MIUI](https://xiaomi.eu/community/threads/7-6-8-10.40358/) and [AEX](https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/rom-aospextended-rom-v3-3-t35784770)
 
 - marginally better standby on MIUI (still about 2day total, 10h SoT)
 - MIUI taking up RAM and wakelocks annoyed me (froze some with TitaniumBackup though)
@@ -122,7 +122,7 @@ Unfortunately, Ijust moved back home where there is much better mobile signal (s
 
 I have MicroG set do GCM (Google Cloud Messaging) every 10 minutes on Wifi. Not sure exactly what that is (pulls for every selected app, in addition to instantaneous pushes..?)
 
-
+Fortunately though, it doesn't matter to me if any Google apps don't work; I'll be in China for about a year, starting August. You'll have to do some research on what works and what doesn't. [Shadow53 has some helpful files to get basic things like Contacts and Calendar working.](https://shadow53.com/no-gapps/downloads/)
 
 
 
