@@ -33,7 +33,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 
 ## Tasker Profiles
-### Automatic 2G/4G switching based on Wi-Fi connectivity
+### Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED]
 I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
 
 !link to profiles
@@ -46,17 +46,19 @@ State -> Wifi Connected
    ```
 Task "2G & No data" 
 ```markdown
-   To switch your mobile data connection type to 2G, you can either:
+   _To switch your mobile data connection type to 2G, you can either:_
    - Use the Plugin [Cygergy's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406) in Tasker and select "GSM only" in configuration
    OR
-    ! I want to know how to do this with Shell code (run as root)
+   - ! I want to know how to do this with Shell code (run as root)
     
-   To turn your mobile data off, you can either:
-   - Cygergy #link Data Switcher
+   _To turn your mobile data off, you can either:_
+   - Use the Plugin [Cygergy's Toggle Data](https://forum.xda-developers.com/android/apps-games/app-toggle-data-5-0-widget-to-toggle-t2937936) in Tasker and select "Switch off" in configuration
    OR
-   - Shell code:
-     !snippet (run as root)
+   - Use "Shell" code:
+     setenforce permissive; svc data disable; setenforce enforcing
    ```
+   
+   
 Exit task (press and hold the task on the Profile screen -> add exit task) 
 # 4G, data on
 -  BOLD 4G
