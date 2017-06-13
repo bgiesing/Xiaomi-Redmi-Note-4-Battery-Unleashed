@@ -36,54 +36,42 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ### Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED]
 I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
 
-!link to profiles
-
-If you want to create the profile manually, here's how you can do this:
 Note: you will need these apps to use as Plugins in Tasker:
 - [Cygergy's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406)
 - [Cygergy's Toggle Data](https://forum.xda-developers.com/android/apps-games/app-toggle-data-5-0-widget-to-toggle-t2937936)
 Context
 
+Here is a [link to the Tasker profile]()
+
+If you want to create the profile manually, here's how you can do this:
+
+Tasker State:
 ```markdown
-State -> Wifi Connected
+Wifi Connected
    ```
-Task "2G & No data" 
+Tasker Task: "2G & No data" 
 ```markdown
-   _To switch your mobile data connection type to 2G, you can either:_
    - Use the Plugin [Cygery's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406) in Tasker and select "GSM only" in configuration
    OR
    - ! I want to know how to do this with Shell code (run as root)
     
-   _To turn your mobile data off, you can either:_
-   - Use the Plugin Cygergy's Toggle Data and select "Switch off" in configuration
+    
+   - Use the Plugin Cygery's Toggle Data and select "Switch off" in configuration
    OR
    - Use "Shell" code:
      setenforce permissive; svc data disable; setenforce enforcing
    ```
    
    
-Exit task (press and hold the task on the Profile screen -> add exit task) 
-# 4G, data on
--  BOLD 4G
-    Use the Plugin Cygery's Toggle Network Type and select "LTE, GSM/WCDMMA" in configuration
+Tasker Exit-task (press and hold the task on the Profile screen -> add exit task) 
+```markdown
+   - Use the Plugin Cygery's Toggle Network Type and select "LTE, GSM/WCDMMA" in configuration
    OR
-   ! Want to know how to do this with Shell code (run as root)
--  BOLD Data off
-   Cygergy #link Data Switcher
+   - ! Want to know how to do this with Shell code (run as root)
+
+
+   - Use the Plugin Cygery's Toggle Data and select "Switch on" in configuration
    OR
-   Shell code !snippet (run as root)
-
-
-
-
-
-
-
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/james-clark-5/RN4-Android-7.1.2-Max-Battery/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+   - Use "Shell" code:
+     setenforce permissive; svc data enable; setenforce enforcing
+   ```
