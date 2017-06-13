@@ -34,23 +34,30 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ## Tasker Profiles
 ### Automatic 2G/4G switching based on Wi-Fi connectivity
+I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
 
-# link to profiles
+!link to profiles
 
-# how to create manualy
+If you want to create the profile manually, here's how you can do this:
 
-# 2G,data off:
+Context
 ```markdown
--  BOLD 2G
-   Cygergy #link Data Type Switcher
-   OR
-   ! Want to know how to do this with Shell code (run as root)
--  BOLD Data off
-   Cygergy #link Data Switcher
-   OR
-   Shell code !snippet (run as root)
+State -> Wifi Connected
    ```
-- 
+Task "2G & No data" 
+```markdown
+   To switch your mobile data connection type to 2G, you can either:
+   - Use the Plugin Cygergy #link Data Type Switcher
+   OR
+    ! I want to know how to do this with Shell code (run as root)
+    
+   To turn your mobile data off, you can either:
+   - Cygergy #link Data Switcher
+   OR
+   - Shell code:
+     !snippet (run as root)
+   ```
+Exit task (press and hold the task on the Profile screen -> add exit task) 
 # 4G, data on
 -  BOLD 4G
    Cygergy #link Data Type Switcher
