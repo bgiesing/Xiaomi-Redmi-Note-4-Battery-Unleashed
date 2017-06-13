@@ -1,6 +1,7 @@
 # Section guide
 ### - [Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity (ROOT REQUIRED)](#Tasker2G)
 ### - [Kernel - Various tweaks](#kernelmisc)
+### - [microG GmsCore - lightweight free software clone of Google Play Services](#microg)
 
 
 ## <a name="Tasker2G"></a> Tasker - Auto 2G/4G 
@@ -48,7 +49,7 @@ Tasker Exit-task (press and hold the task on the Profile screen -> add exit task
 
 
 
-## <a name="KernelMisc"></a> Kernel tweaks 
+## <a name="kernelmisc"></a> Kernel tweaks 
 
 I'm using stock kernel (no custom kernels released yet)
 
@@ -99,7 +100,7 @@ Wakelocks
 
 
 
-
+## <a name="microG"></a> Google Play Services open-source replacement, MicroG
 
 
 
