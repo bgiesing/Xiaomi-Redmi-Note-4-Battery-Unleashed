@@ -1,0 +1,115 @@
+<TaskerData sr="" dvi="1" tv="4.9u4m">
+	<Profile sr="prof2" ve="2">
+		<cdate>1494879343040</cdate>
+		<edate>1497363877729</edate>
+		<flags>2</flags>
+		<id>2</id>
+		<mid0>3</mid0>
+		<mid1>4</mid1>
+		<State sr="con0" ve="2">
+			<code>160</code>
+			<Str sr="arg0" ve="3"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+		</State>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1494684270560</cdate>
+		<mdate>1497363981886</mdate>
+		<name>Base</name>
+		<pids>2</pids>
+		<tids>3,4,7</tids>
+		<Img sr="icon" ve="2">
+			<nme>hl_aaa_ext_home</nme>
+		</Img>
+	</Project>
+	<Task sr="task3">
+		<cdate>1494879345901</cdate>
+		<edate>1497357682817</edate>
+		<id>3</id>
+		<nme>2G</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>1181538121</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<action>action_name_set</action>
+					<action-type>java.lang.String</action-type>
+					<com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE>1</com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE>
+					<com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE-type>java.lang.Integer</com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>set to GSM only (SIM ID: 1)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<sub_id>1</sub_id>
+					<sub_id-type>java.lang.Integer</sub_id-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cygery.togglenetworktype.xda</Str>
+			<Str sr="arg2" ve="3">com.cygery.togglenetworktype.EditSettingActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">setenforce permissive; svc data disable; setenforce enforcing</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task4">
+		<cdate>1494879368956</cdate>
+		<edate>1497363877729</edate>
+		<id>4</id>
+		<nme>4G</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>1181538121</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<action>action_name_set</action>
+					<action-type>java.lang.String</action-type>
+					<com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE>9</com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE>
+					<com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE-type>java.lang.Integer</com.cygery.togglenetworktype.EXTRA_NETWORK_TYPE-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>set to LTE, GSM/WCDMA (SIM ID: 1)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<sub_id>1</sub_id>
+					<sub_id-type>java.lang.Integer</sub_id-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">com.cygery.togglenetworktype.xda</Str>
+			<Str sr="arg2" ve="3">com.cygery.togglenetworktype.EditSettingActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>123</code>
+			<Str sr="arg0" ve="3">setenforce permissive; svc data enable; setenforce enforcing</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task7">
+		<cdate>1496254550029</cdate>
+		<edate>1496254573826</edate>
+		<id>7</id>
+		<nme>Anki</nme>
+		<Action sr="act0" ve="7">
+			<code>20</code>
+			<App sr="arg0">
+				<appClass>com.ichi2.anki.IntentHandler</appClass>
+				<appPkg>com.ichi2.anki</appPkg>
+				<label>AnkiDroid</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
