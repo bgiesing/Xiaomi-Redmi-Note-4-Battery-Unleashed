@@ -1,9 +1,9 @@
 # Section guide
 ### - Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
 ### - Kernel - Various tweaks 
+[TaskerLink](#Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED])
 
-
-## Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
+## Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED]
 I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
 
 Note: you will need these apps to use as Plugins in Tasker:
