@@ -35,6 +35,30 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 ## Tasker Profiles
 ### Automatic 2G/4G switching based on Wi-Fi connectivity
 
+# link to profiles
+
+# how to create manualy
+
+# 2G,data off:
+-  BOLD 2G
+   Cygergy #link Data Type Switcher
+   OR
+   ! Want to know how to do this with Shell code (run as root)
+-  BOLD Data off
+   Cygergy #link Data Switcher
+   OR
+   Shell code !snippet (run as root)
+   
+- 
+# 4G, data on
+-  BOLD 4G
+   Cygergy #link Data Type Switcher
+   OR
+   ! Want to know how to do this with Shell code (run as root)
+-  BOLD Data off
+   Cygergy #link Data Switcher
+   OR
+   Shell code !snippet (run as root)
 
 
 
