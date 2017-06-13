@@ -1,6 +1,6 @@
-### Section guide
-# - Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
-# - Kernel - Various tweaks 
+# Section guide
+### - Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
+### - Kernel - Various tweaks 
 
 
 ## Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
