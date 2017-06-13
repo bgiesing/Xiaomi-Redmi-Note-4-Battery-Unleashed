@@ -3,6 +3,10 @@
 ### - [Kernel - Various tweaks](#kernelmisc)
 ### - [microG GmsCore - lightweight free software clone of Google Play Services](#microg)
 
+TODO
+- Try adding [Naptime: Super Doze mode](https://play.google.com/store/apps/details?id=com.franco.doze&hl=en_GB) by Francisco Franco to my MicroG + Tasker 2G Auto setup, see if it controls the Messenger and WeChat wakelocks (~10% awake time, 1h each app in a litte over 1 day) and helps battery.
+- Try and build a custom kernel with extra features (CPUs online when screen of, max screen off freq, finely tuned GlassFish1.2-styled interactive govenor profile,....)
+
 
 ## <a name="Tasker2G"></a> Tasker - Auto 2G/4G 
 I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
@@ -47,7 +51,8 @@ Tasker Exit-task (press and hold the task on the Profile screen -> add exit task
      setenforce permissive; svc data enable; setenforce enforcing
    ```
 
-
+TODO:
+- Make Tasker profile: When cell signal dies, launch 2G task
 
 ## <a name="kernelmisc"></a> Kernel tweaks 
 
@@ -100,11 +105,20 @@ Wakelocks
 
 
 
-## <a name="microG"></a> Google Play Services open-source replacement, MicroG
+## <a name="microg"></a> Google Play Services open-source replacement, MicroG
 
 
+I tried both MIUI and AEX
 
+- marginally better standby on MIUI (still about 2day total, 10h SoT)
+- MIUI taking up RAM and wakelocks annoyed me (froze some with TitaniumBackup though)
 
+- Found that [AEX has "Signature Spoofing"](https://github.com/microg/android_packages_apps_GmsCore/wiki/Signature-Spoofing), so I could try out [MicroG GMS Core (Google play services replacement)](https://github.com/microg). Didn't see much benefit from it on my OPO (bacon) a while ago, but I'm willing to try it again.
+
+Unfortunately, Ijust moved back home where there is much better mobile signal (solid green bars on 2G)
+ - so I can't say whether cell signal or MicroG seems to be doubling my standby and adding 20% more SoT
+
+I have MicroG set do GCM (Google Cloud Messaging) every 10 minutes on Wifi. Not sure exactly what that is (pulls for every selected app, in addition to instantaneous pushes..?)
 
 
 
