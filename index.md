@@ -39,20 +39,23 @@ I had some serious battery drain when I had no 4G signal in my flat; using 2G he
 !link to profiles
 
 If you want to create the profile manually, here's how you can do this:
-
+Note: you will need these apps to use as Plugins in Tasker:
+- [Cygergy's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406)
+- [Cygergy's Toggle Data](https://forum.xda-developers.com/android/apps-games/app-toggle-data-5-0-widget-to-toggle-t2937936)
 Context
+
 ```markdown
 State -> Wifi Connected
    ```
 Task "2G & No data" 
 ```markdown
    _To switch your mobile data connection type to 2G, you can either:_
-   - Use the Plugin [Cygergy's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406) in Tasker and select "GSM only" in configuration
+   - Use the Plugin [Cygery's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406) in Tasker and select "GSM only" in configuration
    OR
    - ! I want to know how to do this with Shell code (run as root)
     
    _To turn your mobile data off, you can either:_
-   - Use the Plugin [Cygergy's Toggle Data](https://forum.xda-developers.com/android/apps-games/app-toggle-data-5-0-widget-to-toggle-t2937936) in Tasker and select "Switch off" in configuration
+   - Use the Plugin Cygergy's Toggle Data and select "Switch off" in configuration
    OR
    - Use "Shell" code:
      setenforce permissive; svc data disable; setenforce enforcing
@@ -62,7 +65,7 @@ Task "2G & No data"
 Exit task (press and hold the task on the Profile screen -> add exit task) 
 # 4G, data on
 -  BOLD 4G
-    Use the Plugin [Cygergy's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406)  in Tasker and select "LTE, GSM/WCDMMA" in configuration
+    Use the Plugin Cygery's Toggle Network Type and select "LTE, GSM/WCDMMA" in configuration
    OR
    ! Want to know how to do this with Shell code (run as root)
 -  BOLD Data off
