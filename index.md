@@ -49,7 +49,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
    Cygergy #link Data Switcher
    OR
    Shell code !snippet (run as root)
-   
+   ```
 - 
 # 4G, data on
 -  BOLD 4G
