@@ -1,9 +1,9 @@
-## Section guide
+### Section guide
 # - Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
 # - Kernel - Various tweaks 
 
 
-### Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
+## Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
 I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
 
 Note: you will need these apps to use as Plugins in Tasker:
@@ -21,7 +21,7 @@ Wifi Connected
    ```
 Tasker Task: "2G & No data" 
 ```markdown
-   - Use the Plugin [Cygery's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406) in Tasker and select "GSM only" in configuration
+   - Use the Plugin [Cygery's Toggle Network Type] and select "GSM only" in configuration
    OR
    - ! I want to know how to do this with Shell code (run as root)
     
