@@ -40,6 +40,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 # how to create manualy
 
 # 2G,data off:
+```markdown
 -  BOLD 2G
    Cygergy #link Data Type Switcher
    OR
