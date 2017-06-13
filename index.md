@@ -16,7 +16,9 @@ Note: you will need these apps to use as Plugins in Tasker:
 - [Cygergy's Toggle Data](https://forum.xda-developers.com/android/apps-games/app-toggle-data-5-0-widget-to-toggle-t2937936)
 
 
-Here is a [link to the Tasker profile]()
+Here is a [link to the Tasker profile](Tasker2G_4G_Auto.xml). To install it:
+- Place it in "/Tasker/configs/user/"
+- In Tasker, hit 3 dots at top -> Data -> Restore -> User Local Backup -> Press on filename.xml
 
 If you want to create the profile manually, here's how you can do this:
 
