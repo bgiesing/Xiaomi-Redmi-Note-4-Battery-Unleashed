@@ -52,7 +52,8 @@ Tasker Exit-task (press and hold the task on the Profile screen -> add exit task
 
 I'm using stock kernel (no custom kernels released yet)
 
-I'm using ElementalX Kernel Manager (EX Kernel Manager)
+I'm using [ElementalX Kernel Manager (EX Kernel Manager)](https://play.google.com/store/apps/details?id=flar2.exkernelmanager&hl=en_GB)
+[Kernel Adiutor Mod](https://forum.xda-developers.com/android/apps-games/kernel-adiutor-mod-singularity-kernel-t3333549) is free and pretty good. Hasn't been update for ~1 year though, so I'm not sure if anything important isn't up-to-date
 Note: Make sure for the following settings the power symbol on the right is blue (apply on boot)
 CPU interactive govenor, BUT with 
 Glassfish 1.2 interactive governor profile (link) - there's a guide on the linked post.
@@ -65,9 +66,9 @@ Min CPU frequency 652 MHz (can custom kernels make this even lower? [Bacon's Lig
 
 
 CPUs 4 & 5 disabled
-background: SD625 has 8x A53 cores on 14nm fabrication process
+background: [SD625 has 8x A53 cores on 14nm fabrication process](https://www.qualcomm.com/products/snapdragon/processors/625)
                       cores 0-3 are "small" 
-                      cores 4-7 are "big" (they're just differnet labels for the same thing)
+                      cores 4-7 are "big" (they're just different labels for the same thing)
 
 - I'm a light user (few games, not graphically/computationally demanding)
 - Don't notice a slowdown compared to all 8 cores being enabled 
