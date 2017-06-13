@@ -1,25 +1,9 @@
-### Markdown
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-```
+## Section guide
+# - Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
+# - Kernel - Various tweaks 
 
 
-
-
-## Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
+### Tasker - Automatic 2G/4G switching based on Wi-Fi connectivity [ROOT REQUIRED] 
 I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
 
 Note: you will need these apps to use as Plugins in Tasker:
@@ -61,3 +45,50 @@ Tasker Exit-task (press and hold the task on the Profile screen -> add exit task
    - Use "Shell" code:
      setenforce permissive; svc data enable; setenforce enforcing
    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Markdown
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+```
+
