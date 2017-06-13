@@ -47,7 +47,7 @@ State -> Wifi Connected
 Task "2G & No data" 
 ```markdown
    To switch your mobile data connection type to 2G, you can either:
-   - Use the Plugin Cygergy #link Data Type Switcher
+   - Use the Plugin [Cygergy's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406) in Tasker and select "GSM only" in configuration
    OR
     ! I want to know how to do this with Shell code (run as root)
     
@@ -60,7 +60,7 @@ Task "2G & No data"
 Exit task (press and hold the task on the Profile screen -> add exit task) 
 # 4G, data on
 -  BOLD 4G
-   Cygergy #link Data Type Switcher
+    Use the Plugin [Cygergy's Toggle Network Type](https://forum.xda-developers.com/android/apps-games/widget-toggle-network-type-5-0-xda-t2945406)  in Tasker and select "LTE, GSM/WCDMMA" in configuration
    OR
    ! Want to know how to do this with Shell code (run as root)
 -  BOLD Data off
