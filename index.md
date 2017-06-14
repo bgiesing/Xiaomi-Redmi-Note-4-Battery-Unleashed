@@ -6,7 +6,7 @@
 TODO
 - Try adding [Naptime: Super Doze mode](https://play.google.com/store/apps/details?id=com.franco.doze&hl=en_GB) by Francisco Franco to my MicroG + Tasker 2G Auto setup, see if it controls the Messenger and WeChat wakelocks (~10% awake time, 1h each app in a litte over 1 day) and helps battery.
 - Try and build a custom kernel with extra features (CPUs online when screen of, max screen off freq, finely tuned GlassFish1.2-styled interactive govenor profile,....)
-
+- Implement 2G resetting when cell signal drops completely (not sure why this happens) 
 
 ## <a name="Tasker2G"></a> Tasker - Auto 2G/4G 
 I had some serious battery drain when I had no 4G signal in my flat; using 2G helped a lot. I could still receive calls, and I had data from my Wifi.
