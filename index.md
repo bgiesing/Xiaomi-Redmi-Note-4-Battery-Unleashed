@@ -30,9 +30,11 @@ Tasker Task: "2G & No data"
 ```markdown
    - Use the Plugin [Cygery's Toggle Network Type] and select "GSM only" in configuration
    OR
-   - ! I want to know how to do this with Shell code (run as root)
-    
-    
+   - ! Use this Shell code (run as root) :
+   settings put global preferred_network_mode1 1
+
+
+
    - Use the Plugin Cygery's Toggle Data and select "Switch off" in configuration
    OR
    - Use "Shell" code:
@@ -44,13 +46,13 @@ Tasker Exit-task (press and hold the task on the Profile screen -> add exit task
 ```markdown
    - Use the Plugin Cygery's Toggle Network Type and select "LTE, GSM/WCDMMA" in configuration
    OR
-   - ! Want to know how to do this with Shell code (run as root)
-
+   settings put global preferred_network_mode1 10
+   
 
    - Use the Plugin Cygery's Toggle Data and select "Switch on" in configuration
    OR
-   - Use "Shell" code:
-     setenforce permissive; svc data enable; setenforce enforcing
+   - Use this Shell code (run as Root
+     setenforce permissive; svc data enable; setenforce enforcing
    ```
 
 TODO:
