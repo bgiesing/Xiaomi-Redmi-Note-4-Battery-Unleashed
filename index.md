@@ -11,7 +11,8 @@
 - [Naptime: Super Doze mode](https://play.google.com/store/apps/details?id=com.franco.doze&hl=en_GB) by Francisco Franco seems to work well with my MicroG + Tasker 2G Auto setup. It seems to control the Messenger and WeChat wakelocks (~10% awake time, 1h each app in a litte over 1 day) and helps battery. 
 - I switched to Messenger Light. Seems to have helped battery, but I can't make calls with this system now :(
 - misc notes on CPU:
-```Similar resilts on faust and velvet. 
+```markdown
+Similar resilts on faust and velvet. 
 
 1ghz max still mostly smooth. Some lags, not too noticeable. 
 
@@ -24,7 +25,8 @@ Gpu 133min/320 max
 Adreno Idler active
 
 Will try Faust 3.1 w/ spectrum battery saver profile (4 cores off, though!) 
-Also updating to AEX 7/7/2017 from 24/6/2017.```
+Also updating to AEX 7/7/2017 from 24/6/2017.
+```
 
 
 
