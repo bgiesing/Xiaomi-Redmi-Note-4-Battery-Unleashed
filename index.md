@@ -8,9 +8,11 @@
 
 ## <a name="updates"></a> Updates/Journal
 08/07/2017 :
+
 - [Naptime: Super Doze mode](https://play.google.com/store/apps/details?id=com.franco.doze&hl=en_GB) by Francisco Franco seems to work well with my MicroG + Tasker 2G Auto setup. It seems to control the Messenger and WeChat wakelocks (~10% awake time, 1h each app in a litte over 1 day) and helps battery. 
 - I switched to Messenger Light. Seems to have helped battery, but I can't make calls with this system now :(
 - misc notes on CPU:
+
 ```markdown
 Similar resilts on faust and velvet. 
 
@@ -28,8 +30,6 @@ Will try Faust 3.1 w/ spectrum battery saver profile (4 cores off, though!)
 Also updating to AEX 7/7/2017 from 24/6/2017.
 ```
 
-
-
 ## <a name="todo"></a> todo
 
 - Try adding [Naptime: Super Doze mode](https://play.google.com/store/apps/details?id=com.franco.doze&hl=en_GB) by Francisco Franco to my MicroG + Tasker 2G Auto setup, see if it controls the Messenger and WeChat wakelocks (~10% awake time, 1h each app in a litte over 1 day) and helps battery.
@@ -45,16 +45,20 @@ Note: you will need these apps to use as Plugins in Tasker:
 
 
 Here is a [link to the Tasker profile](Tasker2G_4G_Auto.xml). To install it:
+
 - Place it in "/Tasker/configs/user/"
 - In Tasker, hit 3 dots at top -> Data -> Restore -> User Local Backup -> Press on filename.xml
 
 If you want to create the profile manually, here's how you can do this:
 
 Tasker State:
+
 ```markdown
 Wifi Connected
-   ```
-Tasker Task: "2G & No data" 
+```
+
+Tasker Task: "2G & No data"
+
 ```markdown
    - Use the Plugin [Cygery's Toggle Network Type] and select "GSM only" in configuration
    OR
@@ -67,10 +71,10 @@ Tasker Task: "2G & No data"
    OR
    - Use "Shell" code:
      setenforce permissive; svc data disable; setenforce enforcing
-   ```
-   
-   
-Tasker Exit-task (press and hold the task on the Profile screen -> add exit task): 
+```  
+
+Tasker Exit-task (press and hold the task on the Profile screen -> add exit task):
+
 ```markdown
    - Use the Plugin Cygery's Toggle Network Type and select "LTE, GSM/WCDMMA" in configuration
    OR
@@ -81,9 +85,10 @@ Tasker Exit-task (press and hold the task on the Profile screen -> add exit task
    OR
    - Use this Shell code (run as Root
      setenforce permissive; svc data enable; setenforce enforcing
-   ```
+```
 
 TODO:
+
 - Make Tasker profile: When cell signal dies, launch 2G task
 
 ## <a name="kernelmisc"></a> Kernel tweaks 
@@ -99,9 +104,8 @@ Note: without a custom kernel, TouchBoost cannot be disabled - won't get full en
 
 Max CPU frequency 1689MHz
 Min CPU frequency 652 MHz (can custom kernels make this even lower? [Bacon's Lighting Kernel](https://forum.xda-developers.com/oneplus-one/development/lightning-kernel-omni-rom-v01-t3245895) went down to 268MHz
+
 - Don't notice a slowdown compared to 2016 MHz
-
-
 
 CPUs 4 & 5 disabled
 background: [SD625 has 8x A53 cores on 14nm fabrication process](https://www.qualcomm.com/products/snapdragon/processors/625)
@@ -118,14 +122,10 @@ background: [SD625 has 8x A53 cores on 14nm fabrication process](https://www.qua
 
 wq_power_saving enabled (no idea what it is, couldn't find info about it.... sounds good though)
 
-
 GPU
 Max GPU frequency 320MHz 
 Min GPU frequency 133MHz 
 GPU initial frequency 133MHz 
-
-
-
 
 Note: 
 27 hours standby, 3h15m SoT, 73% battery (95% of the time signal is dark green, very strong). Very little wakelock bars shown when screen is not on
@@ -133,18 +133,12 @@ Note:
 Wakelocks
 1h from WeChat (462 counts) and Messenger (227 counts) EACH!
 
-
-
-
-
 ## <a name="microg"></a> Google Play Services open-source replacement, MicroG
-
 
 I tried both [xiaomi.eu's MIUI](https://xiaomi.eu/community/threads/7-6-8-10.40358/) and [AEX](https://forum.xda-developers.com/redmi-note-4/xiaomi-redmi-note-4-snapdragon-roms-kernels-recoveries--other-development/rom-aospextended-rom-v3-3-t35784770)
 
 - marginally better standby on MIUI (still about 2day total, 10h SoT)
 - MIUI taking up RAM and wakelocks annoyed me (froze some with TitaniumBackup though)
-
 - Found that [AEX has "Signature Spoofing"](https://github.com/microg/android_packages_apps_GmsCore/wiki/Signature-Spoofing), so I could try out [MicroG GMS Core (Google play services replacement)](https://github.com/microg). Didn't see much benefit from it on my OPO (bacon) a while ago, but I'm willing to try it again.
 
 Unfortunately, Ijust moved back home where there is much better mobile signal (solid green bars on 2G)
@@ -153,27 +147,3 @@ Unfortunately, Ijust moved back home where there is much better mobile signal (s
 I have MicroG set do GCM (Google Cloud Messaging) every 10 minutes on Wifi. Not sure exactly what that is (pulls for every selected app, in addition to instantaneous pushes..?)
 
 Fortunately though, it doesn't matter to me if any Google apps don't work; I'll be in China for about a year, starting August. You'll have to do some research on what works and what doesn't. [Shadow53 has some helpful files to get basic things like Contacts and Calendar working.](https://shadow53.com/no-gapps/downloads/)
-
-
-
-
-
-
-### Markdown
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-```
-
